@@ -1,0 +1,42 @@
+.newSection{
+  h2{
+    font-size: 26px;
+    color: #222222;
+    position: relative;
+    &:before{
+      content: "";
+      width: 70px;
+      height: 1px;
+      background-color: #f4bc16;
+      position: absolute;
+      right: 0;
+      bottom: -15px;
+    }
+  }
+  .swiper-slide{
+    position: relative;
+    transition-duration: 0.5s;
+    &:hover{
+      &:before{
+        content: "";
+        background-color: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+      h3{
+        display: block;
+      }
+    }
+    h3{
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      color: #fff;
+      display: none;
+    }
+  }
+}

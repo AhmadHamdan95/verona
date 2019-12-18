@@ -1,0 +1,40 @@
+.productSection{
+  background-image: url(../images/product-bg.jpg);
+  h2{
+    font-size: 26px;
+    color: #fff;
+    position: relative;
+    &:before{
+      content: "";
+      width: 40px;
+      height: 1px;
+      background-color: #f4bc16;
+      position: absolute;
+      right: 0;
+      bottom: -15px;
+    }
+  }
+  .productImg{
+    position: relative;
+    span{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 10px 15px;
+      font-size: 18px;
+      color: #fff;
+      background-color: rgba(0,0,0,0.8);
+      &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-left-color: #f4bc16;
+        border-bottom-color: #f4bc16;
+      }
+    }
+  }
+}

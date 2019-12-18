@@ -1,0 +1,28 @@
+@import "template/layouts/variables";
+body{
+  direction: $rtl;
+  text-align: $right;
+}
+.headerFixed{
+  padding-top: 89px;
+  .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+}
+@import "template/layouts/header";
+
+@import "template/home/slider";
+
+@import "template/home/about";
+
+@import "template/home/products";
+
+@import "template/home/new";
+
+@import "template/home/info";
+
+@import "template/layouts/footer";

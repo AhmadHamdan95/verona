@@ -1,0 +1,28 @@
+.footer {
+  background-color: #111111;
+  span {
+    font-size: 16px;
+    color: #a5a5a5;
+  }
+  .socialMedia{
+    display: flex;
+    a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      color: #111111;
+      background-color: #fff;
+      margin-right: 10px;
+      transition-duration: 0.5s;
+      &:first-child{
+        margin-right: 0;
+      }
+      &:hover{
+        opacity: 0.8;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+}

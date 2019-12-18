@@ -1,0 +1,53 @@
+.aboutSection{
+  .aboutText{
+    h2{
+      font-size: 26px;
+      color: #030303;
+      position: relative;
+      &:before{
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: #f4bc16;
+        position: absolute;
+        right: 0;
+        bottom: -15px;
+      }
+    }
+    p{
+      margin-top: 50px;
+      margin-bottom: 70px;
+      margin-left: 85px;
+      font-size: 18px;
+      color: #363636;
+    }
+    a{
+      font-size: 20px;
+      color: #030303;
+      position: relative;
+      &:before{
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: #d5d5d5;
+        position: absolute;
+        right: 0;
+        bottom: -15px;
+      }
+      &:hover{
+        text-decoration: none;
+        span{
+          color: #8f8f8f;
+        }
+      }
+      span{
+        display: inline-block;
+        color: #d5d5d5;
+        margin-right: 20px;
+      }
+    }
+  }
+  .aboutImg{
+    box-shadow: 0px 0px 14.56px 1.44px rgba(0, 0, 0, 0.15);
+  }
+}
